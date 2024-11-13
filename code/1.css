@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0px;
+    font-family: "Roboto Mono", monospace;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+}
+:root{
+    --bgcolor:#141D2F;
+    --fontcolor:#FFFFFF;
+    --buttonhovercolor:#60ABFF;
+    --containercolor:#1E2A47;
+    --unfontcolor:#8F95A3;
+    --buttoncolor:#0079ff;
+}
+.container{
+    padding-top: 50px;
+width:41%;
+height: 90%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: var(--fontcolor);
+    align-items: center;
+    margin-top: 10px;
+}
+.nav h1{
+    font-weight: 600;
+}
+.nav button{
+    background: none;
+    border: none;
+    color: var(--fontcolor);
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+.searchbox{
+    background-color: var(--containercolor);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    align-items: center;
+    background-size: 20px;
+    background-position-x: 20px;
+    padding: 1px;
+    background-position-y: center;
+    height: 52px;
+    background-image: url(assets/search-icon.svg);
+    background-repeat: no-repeat;
+    margin-top: 36px;
+    cursor:text;
+    border-radius: 10px;
+}
+.searchinput{
+    margin-left: 54px;
+    background:none;
+    border: none;
+    color: var(--fontcolor);
+    width: 50%;
+    height: 30px;
+    outline: none;
+}
+.searchinput:focus{
+    background: none;
+}
+.searchbox button{
+    background-color: var(--buttoncolor);
+    color: var(--fontcolor);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    height: 83%;
+    margin-right: 4px;
+    width: 19%;
+}
+.nav button svg path{
+    fill: var(--fontcolor);
+}
+.searchinput::-webkit-input-placeholder{
+    font-size: 15px;
+    color: var(--fontcolor);
+}
+.searchbox button:hover{
+    background-color: var(--buttonhovercolor);
+}
+.userprofile{
+    background-color: var(--containercolor);
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 65%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.personaldetails{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+margin-top: 20px;
+}
+.nameid{
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    gap: 22px;
+}
+.profile img{
+    height: 90px;
+    border: none;
+    background: none;
+    width: 90px;
+    border-radius: 100px;
+}
+.gitdetails{
+    background-color: var(--bgcolor);
+    width: 90%;
+    height:max-content;
+padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    color:var(--fontcolor);
+}
+.socialdetails{
+    width: 90%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   justify-items: center;
+}
+.socialdetails span span svg path{
+    fill: var(--fontcolor);
+    gap: 10px;
+}
+.userprofile{
+    color: var(--fontcolor);
+}
+.bio{
+    opacity: 0.65;
+}
+.date{
+    opacity: 0.65;
+    font-size: 12px;
+}
+.nameid a{
+color:#1A50F3;
+font-size: 14px;
+}
+.nameid{
+    gap: 10px;
+}
+.gitdetails a{
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 16px !important;
+    font-weight: 700;
+}
+.gitdetails a:hover{
+    text-decoration: underline var(--fontcolor);
+}
+.gitdetails span{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    font-size: 13px;
+}
+.socialdetails span{
+    display: flex;
+    gap: 15px;
+}
+.socialdetails :nth-child(2){
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 14px;
+}
+.socialdetails span:nth-child(2){
+    text-transform: uppercase;
+
+}
+.err{
+background-color: red;
+width: fit-content;
+padding: 3px;
+border-radius: 30px;
+color:white;
+align-self: flex-end;
+float: right;
+}
